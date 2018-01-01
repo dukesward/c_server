@@ -1,0 +1,14 @@
+
+*.save
+*.cmake
+*.a
+*.save
+
+CMakeCache.txt
+
+CMakeFiles/*
+*/CMakeFiles/*
+*/*/CMakeFiles/*
+bin/*
+
+
