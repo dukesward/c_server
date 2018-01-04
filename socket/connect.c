@@ -76,7 +76,7 @@ void socket_create(int port)
 		memcpy(&w_set, &m_set, sizeof(m_set));
 		// wait for the selector to select out a socket with upcomming event
 		printf("Waiting on select...\n");
-		sds = select(sdl + 1, &w_set, NULL, NULL, &timeout);
+		sds = select(sdl + 1, &w_set, NULL, NULL, NULL);
 
 		if(sds < 0)
 		{

@@ -1,18 +1,13 @@
 #ifndef _SERVER_CONNECT_H_
 #define _SERVER_CONNECT_H_
 
-#include <sys/socket.h>
-#include <sys/un.h>
-#include <sys/time.h>
-#include <sys/select.h>
-#include <sys/types.h>
+#ifndef _SERVER_INCLUDE_H_
+  #include "include.h"
+#endif
 
-#include <netinet/in.h>
-#include <netinet/tcp.h>
-
-#include <arpa/inet.h>
-
-#include "nonblock.h"
+#ifndef _UTILS_H_
+  #include "utils.h"
+#endif
 
 void socket_create(int port);
 void acceptRequest(int sd);
